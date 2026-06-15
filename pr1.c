@@ -17,7 +17,7 @@
 // }
 
 
- #include <stdio.h>
+#include <stdio.h>
 // #define SQR(x) x x
 int main()
 // {
@@ -52,9 +52,9 @@ int main()
 // printf("%d %d %d", var.ch, var.ch3, var.si);
 // }
 
-{
-    char CDAC6 = {'C', 'D', 'A', '\0', 'C'};
-    printf("%s", CDAC);
-    return 0; 
+// {
+//     char CDAC6 = {'C', 'D', 'A', '\0', 'C'};
+//     printf("%s", CDAC);
+//     return 0; 
     
-}
+// }

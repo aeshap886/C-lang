@@ -1,0 +1,48 @@
+ ******************** important notes last ****************************
+
+CCAT rule
+
+i++ + ++i
+            i++(use first then increase) , ++i(increase first then use)
+++i + ++i
+
+i++ + i++
+
+a++ + a
+
+x = x++
+
+the variable being modified more than once in the same expression?
+
+answer is Undefined behavior.
+
+///pointer type code//
+
+printf("%d %d", x, ++x);
+printf("%d", x++ + ++x);
+printf("%d %d", *p, ++(*p));
+printf("%d %d", x++, x);
+printf("%d", x++ + x);
+printf("%d", ++x + x++);
+printf("%d %d", *p++, *p);
+
+correct ans : undefined Behavior
+
+*p++ -> move the pointer value
+(*p)++ -> change the value
+
+****************************Function**********************
+printf("%d",n);
+
+fun(n-1);
+
+o/p : 321
+
+fun(n-1);
+printf("%d",n);
+
+o/p: 123
+
+
+
+
