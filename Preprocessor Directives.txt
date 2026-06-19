@@ -1,0 +1,129 @@
+*************Preprocessor Directives****************************
+
+what is preprocessor?
+
+=>  source code -> preprocessor -> compiler -> output
+
+does text replacement
+includes files
+enables/disables code
+defines constants/macros
+
+2. main preprocessor directives
+
+	1. #define -> macro definition
+
+	ex:- 	#define PI 3.14
+	     	#define SQR(x) ((x)*(x))
+
+	2. #include -> file inclusion
+
+	ex:-	#include<stdio.h>  //< > system headers
+
+	 	#include<string.h>  // " " user defined headers
+
+	3. #undef -> remove macro
+		#define pI 3.14
+		#undef PI
+
+	4. conditional compilation
+
+	
+
+	(5) Predefined Macros (VERY IMPORTANT for CCAT)
+
+		Macro	         Meaning
+		__FILE__	current file name
+		__LINE__	current line number
+		__DATE__	compilation date
+		__TIME__	compilation time
+
+*** Macro is only text replacement.
+
+#define MUL(x) x*5  => 2+4 *5 =2+20 = 22  MUL(x)((x)*5) = 30
+#define SQR(x) (x*x)
+#define JOIN(a,b) a##b
+#define STR(x) #x => stringizing operator token to string convert
+
+
+*********structure****************
+
+# Stringizing
+## token pasting
+
+1. STACK USE LIFO push 10 push 20 push 30  pop 30
+
+2. Queue use FIFO 10 enters 20 enters 30 enters remove 10
+
+string is a not a storage class.
+
+
+****************File Pointer********************
+
+FILE *fp;
+
+file is a structure defined in stdio.h
+
+opening file:
+
+fp = fopen("data.txt", "r");
+
+"r" read only			"r+" read + write
+
+"w" write only			"w+" read + write + truncate
+
+"a" append			"a+" read + append
+
+"rb"  binary read		"wb" binary write
+
+"ab"  binary append
+
+
+FILE * is a pointer that stores the address of the opened file and is returned by fopen().
+
+fopen() open file    		fseek()  move pointer
+
+fprintf() write text		fwrite() binary write	
+
+fgetc() read character		fread() binary read
+
+fclose close file 		remind(fp) moves file pointer to beginning
+
+
+fseek( fp, 0, SEEK_END)   moves to end	//SEEK_END  end
+
+fseek(fp, 0, SEEK_SET)  moves to beginning  //SEEK_SET  start
+
+fseek(fp, -1, SEEK_CUR) moves back 1 byte only	//SEEK_CUR   current
+
+fclose() fopen() reopens file, not equivalent 
+
+ 
+EOF -1
+
+variable type 		default value
+
+local variable 		garbage 
+
+global variable 	0
+
+static variable 	0
+
+
+
+Syntax			Meaning
+t.x			Access member through object
+p->x			Access member through pointer
+(*p).x			Same as p->x
+struct Test t = {0};	All members become 0
+Local structure		Garbage if not initialized
+Global structure	All members become 0
+	
+
+
+
+
+
+
+
+

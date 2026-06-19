@@ -7,9 +7,9 @@ i++ + ++i
 ++i + ++i
 
 i++ + i++
-
+           
 a++ + a
-
+		
 x = x++
 
 the variable being modified more than once in the same expression?
@@ -26,22 +26,24 @@ printf("%d", x++ + x);
 printf("%d", ++x + x++);
 printf("%d %d", *p++, *p);
 
-correct ans : undefined Behavior
+correct Ans : undefined Behavior
 
 *p++ -> move the pointer value
 (*p)++ -> change the value
 
 ****************************Function**********************
-printf("%d",n);
+printf("%d", n);
 
 fun(n-1);
 
 o/p : 321
 
 fun(n-1);
-printf("%d",n);
+printf("%d", n);
 
-o/p: 123
+o/p:- 123
+
+
 
 
 

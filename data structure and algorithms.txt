@@ -1,0 +1,24 @@
+************************data structure and algorithms********************
+
+divide & conquer paradigm  :- merge sort, quick sort , binary search, Strassen matrix
+				multiplication 
+
+greedy :- Kruskal , prim, Dijkstra
+
+dynamic programming :- 0/1 knapsack
+
+backtracking :- N-queens
+
+
+
+algorithm                    complexity
+
+linear search 			o(n)
+
+binary search 			o(log n)
+
+bubble sort 			o(n2)
+
+selection sort			o(n2)
+
+insertion sort 			o(n2)

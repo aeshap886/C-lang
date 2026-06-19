@@ -10,3 +10,4 @@ void main (){
     printf("%d",y) ;
 
 }
+
